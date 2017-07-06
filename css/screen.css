@@ -1,0 +1,228 @@
+/*---------EXIPLICIT CSS---------*/
+
+html, body {
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: black;
+  background: url("../images/darkknight.jpg");
+  background-position: left bottom;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+}
+
+header h1 {
+  padding-top: 15px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  background-color: #222222;
+}
+
+footer a {
+  padding-top: 15px;
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  height: 30px;
+  color: white;
+  display: block;
+  text-align: center;
+  background-color: #222222;
+}
+
+.push {
+  height: 45px;
+}
+
+section {
+  margin-bottom: -50px;
+  width: 720px;
+  margin: 0 auto;
+}
+
+article {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(176, 176, 176, 0.7);
+  font-size: 20px;
+  width: 100%;
+}
+
+article h2{
+  font-size:calc(25px + 1vw);
+  font-weight:bold;
+  text-align: center;
+  text-shadow: 1px 1px #ffffff;
+  margin-bottom: 20px;
+}
+
+article>img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid;
+  border-radius: 15px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+ul img {
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+h3 {
+  text-align: center;
+}
+
+article ul {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+li img{
+  margin-right: 5px;
+}
+
+article p {
+    border-top: 4px dotted black;
+    text-align: center;
+}
+
+div.sprites a[id^="img"]{
+	width:50px;
+	height:50px;
+  display: inline-block;
+  text-align: right;
+}
+
+#menubar {
+  padding:10px;
+  width: 720px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#menu {
+  -moz-transition: color 1s;
+  -webkit-transition: color 1s;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+
+#menu:link {
+    text-decoration: none;
+}
+
+#menu:hover {
+  color: black;
+}
+
+article a:link, article a:visited {
+    color: black;
+}
+
+article.add1 h2 {
+  font-size: 40px;
+}
+
+article.add1 p {
+  font-size: 1.5em;
+}
+
+div.sprites {
+  display: inline-block;
+  width: 250px;
+  float: right;
+  margin-right: -100px;
+}
+
+nav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.1s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+nav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#img1 {
+  background: url("../images/sprites.svg") -10px 0px;
+}
+
+#img2 {
+  background: url("../images/sprites.svg") 50px 0px;
+}
+
+#img3 {
+  background: url("../images/sprites.svg") 170px 0px;
+}
+
+#img4{
+  background: url("../images/sprites.svg") 230px 0px;
+}
+
+div.rotate {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+div.rotate:hover {
+    width: 250px;
+    background-color:white;
+    -webkit-transform: rotateX(180deg); /* Safari */
+    transform: rotateX(180deg);
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+
+@keyframes horizontalmovement {
+    0%   {background-color:white; left:0px; top:0px;}
+    50%  {background-color:blue; left:100px; top:0px;}
+    100% {background-color:black; color: white; left:200px; top:0px;}
+}
+
+div.animation {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: white;
+}
+div.animation:active {
+    animation-name: horizontalmovement;
+    animation-duration: 2s;
+}

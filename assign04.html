@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+Ki Jun Joseph Jung A00918606
+Assignment 1: Index Page
+-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" lang="en">
+  <link rel="stylesheet" href="css/assign04.css" type="text/css">
+  <title>COMP1950 Assignment 4</title>
+
+  <script type="text/javascript" src="jquery-3.1.1.js"></script>
+  <script type="text/javascript">
+  onload=function(){
+
+  }
+
+  /*Funtion to open menu*/
+  function openNav() {
+    document.getElementById("sidenav").style.width = "250px";
+  }
+
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+      document.getElementById("sidenav").style.width = "0";
+  }
+  </script>
+</head>
+
+<body>
+    <!--Start of horizontal navigation menu-->
+    <nav id="sidenav">
+      <ul>
+        <li><a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a></li>
+        <li><a href="assign04.html">Main</a></li>
+        <li><a href="assign04_1.html">Page 1</a></li>
+        <li><a href="assign04_2.html">Page 2</a></li>
+        <li><a href="index.html">Back to Index</a></li>
+      </ul>
+    </nav>
+
+    <!--Start of container-->
+  <div class="container">
+    <!--Start of header section-->
+    <header>
+      <h1>COMP1950 Assignment 4</h1>
+    </header>
+    <div id="menubar">
+      <a id="menu" onclick="openNav()" href="#">Menu</a>
+      <div class="sprites">
+        <a id="img1" href="https://www.facebook.com" target="_blank"></a>
+        <a id="img2" href="https://www.gmail.com" target="_blank"></a>
+        <a id="img3" href="https://www.linkedin.com" target="_blank"></a>
+        <a id="img4" href="https://plus.google.com" target="_blank"></a>
+      </div>
+    </div>
+    <!--Start of content section-->
+    <main id="container">
+      <!--Start of container that contains pictures and paragraphs-->
+      <section>
+        <h2>First Page</h2>
+        <article>
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus
+            fringilla nibh ultrices volutpat. Fusce tincidunt, nulla ac faucibus efficitur,
+            tortor urna scelerisque nulla, non sagittis sapien ante pretium erat. Ut eget aliquam dui.
+            Nulla facilisi. Sed diam mauris, finibus quis ullamcorper non, tincidunt in neque.
+            Aenean dictum arcu id est euismod, in porttitor lacus lobortis. Donec egestas velit auctor,
+             eleifend diam quis, rutrum ante. Donec fringilla erat a lectus dignissim rutrum.
+             Morbi rutrum turpis eu est hendrerit, ut suscipit est consequat. Proin a feugiat nibh,
+             vitae faucibus elit. Nulla dapibus tellus non facilisis iaculis. Duis convallis,
+             turpis eget aliquam placerat, erat diam rhoncus lectus, at aliquam leo justo at massa.</p>
+        </article>
+        <article>
+            <h2>Maecenas mauris mi</h2>
+            <p>Maecenas mauris mi, ultricies eget imperdiet in, tempus et sapien. Maecenas vulputate lacinia
+              vestibulum. Aliquam erat volutpat. Nam non dui in ligula eleifend tincidunt a vitae ex. Nunc venenatis,
+               lacus a auctor fringilla, arcu tortor consequat lectus, a hendrerit elit dolor a diam. Fusce nec cursus
+               justo, ac vulputate nibh. Nullam et quam eu mauris interdum finibus quis eget magna. Praesent consequat
+               nisi viverra, finibus lorem a, porttitor quam. Donec vel leo massa. Sed vitae sem vitae diam lacinia
+                feugiat. Fusce non porta ante.</p>
+        </article>
+        <div class="push"></div>
+      </section>
+    </main>
+
+
+    <!--Start of footer section-->
+    <footer>
+      <a href="http://validator.w3.org/check?uri=referer">HTML Validation</a>
+    </footer>
+  </div>
+
+</body>
+</html>

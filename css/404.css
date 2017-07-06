@@ -1,0 +1,50 @@
+
+body {
+  background-color: black;
+  font-family: "Nanum Gothic", sans-serif;
+  background-image: url("../images/darkknight.jpg");
+}
+
+html, body {
+
+}
+
+a:link, a:visited {
+  color: black;
+}
+
+div.container {
+  max-width: 500px;
+  height: 500px;
+  background-color: rgba(222, 222, 222, 0.75);
+  margin: auto;
+  text-align: center;
+}
+
+section {
+}
+
+@keyframes alert {
+    0%  {color: black;}
+    50% {color: red;}
+    100%  {color: black;}
+}
+
+section h1 {
+  font-size: 200px;
+  animation-name: alert;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+footer {
+  padding-top: 15px;
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  height: 30px;
+  color: white;
+  display: block;
+  text-align: center;
+  background-color: #222222;
+}

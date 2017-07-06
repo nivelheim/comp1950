@@ -1,0 +1,87 @@
+/* ----- global default/initial styles ----- */
+*{padding: 0; margin: 0;}
+body {
+  background-color: white;}
+
+html, body {
+  height:100%;}
+
+a:link, a:visited {
+    color: black;
+}
+
+html body {
+  font: 15px, Arial, Helvetica, sans-serif;
+  color:#333333;}
+
+header, footer {
+  background-color: #43a047;
+  text-align: center;}
+
+nav {
+  font-size: 1.08em;
+  background-color: #4caf50}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;}
+
+nav li {
+   display: inline;
+   margin: 5px;}
+
+div.container {
+ max-width: 800px;
+ background-color: #81c784;
+ margin: 0 auto;}
+
+/* ----- explicit css stlyes -----*/
+/* ----- index.html ----- */
+img.photo {
+  height: 320px;
+  float: left;
+  clear: both;}
+
+div.basic  {
+  width: 500px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 0 auto;}
+
+div.b1 {
+  float: left;}
+
+div.b1 ul {
+  list-style-type: none; }
+
+/* ----- assign02.html ----- */
+div.imgheader {
+  position: relative;
+  width: 800px;
+  height: 150px;
+  overflow: hidden;}
+
+div.imgheader h2 {
+  position: absolute;
+  top: 75px;
+  left: -70px;
+  text-align:right;
+  font-size: 3em;
+  color: white;
+  width: 100%}
+
+div.imgheader img {
+  width: 834px;
+  height: 200px;
+  margin: -75px 0 0 -100px;}
+
+section.city {
+  border-style:solid;
+  margin: 30px;}
+
+div.404 {
+  margin: 0 auto;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+Ki Jun Joseph Jung A00918606
+Assignment 1: Index Page
+-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" lang="en">
+  <link rel="stylesheet" href="css/assign05.css" type="text/css">
+  <title>COMP1950 Assignment 5</title>
+
+  <script type="text/javascript" src="jquery-3.1.1.js"></script>
+  <script type="text/javascript">
+  onload=function(){
+
+  }
+
+  /*Funtion to open menu*/
+  function openNav() {
+    document.getElementById("sidenav").style.width = "250px";
+  }
+
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+      document.getElementById("sidenav").style.width = "0";
+  }
+  </script>
+</head>
+
+<body>
+    <!--Start of horizontal navigation menu-->
+    <nav id="sidenav">
+      <ul>
+        <li><a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a></li>
+        <li><a href="assign05.html">Main</a></li>
+        <li><a href="assign05_1.html">Page 1</a></li>
+        <li><a href="assign05_2.html">Page 2</a></li>
+        <li><a href="assign05_3.html">Page 3</a></li>
+        <li><a href="index.html">Back to Index</a></li>
+      </ul>
+    </nav>
+
+    <!--Start of container-->
+  <div class="container">
+    <!--Start of header section-->
+    <header>
+      <h1>COMP1950 Assignment 5</h1>
+    </header>
+    <div id="menubar">
+      <a id="menu" onclick="openNav()" href="#">Menu</a>
+      <div class="sprites">
+        <a id="img1" href="https://www.facebook.com" target="_blank"></a>
+        <a id="img2" href="https://www.gmail.com" target="_blank"></a>
+        <a id="img3" href="https://www.linkedin.com" target="_blank"></a>
+        <a id="img4" href="https://plus.google.com" target="_blank"></a>
+      </div>
+    </div>
+    <!--Start of content section-->
+    <main id="container">
+      <!--Start of container that contains pictures and paragraphs-->
+      <section>
+        <article>
+          <h2>3D Transform</h2>
+          <div class="rotate">Mouse Over On This Line</div>
+          <p>3D Transform allows you to modify the presentation of an element based
+            on X or Y axis. </p>
+          <div>
+            <br><a href="https://www.w3schools.com/css/css3_3dtransforms.asp">W3School Link</a><br><br>
+          </div>
+          <ul>
+            <li>Chrome 36.0</li>
+            <li>Internet Explorer 10.0</li>
+            <li>Firefox 16.0</li>
+            <li>Safari 9.0</li>
+            <li>Opera 23.0</li>
+          </ul>
+        </article>
+
+        <article>
+            <h2>On-Click Animation</h2>
+              <div class="animation">Click And Hold On This Box</div>
+            <p>This technique allows users to interact with HTML elements responsively.
+              The animation is only active when user gives an input; to reduce any uncessesary resource usage.</p>
+            <div>
+              <br><a href="https://www.w3schools.com/howto/howto_css_animate_buttons.asp">W3School Link</a><br><br>
+            </div>
+            <ul>
+              <li>Chrome 43.0</li>
+              <li>Internet Explorer 10.0</li>
+              <li>Firefox 16.0</li>
+              <li>Safari 9.0</li>
+              <li>Opera 30.0</li>
+            </ul>
+        </article>
+        <div class="push"></div>
+      </section>
+    </main>
+
+
+    <!--Start of footer section-->
+    <footer>
+      <a href="http://validator.w3.org/check?uri=referer">HTML Validation</a>
+    </footer>
+  </div>
+
+</body>
+</html>

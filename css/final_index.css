@@ -1,0 +1,152 @@
+@import url("reset.css");
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*----------------dropdown menu*/
+nav {
+    background-color: rgb(65, 109, 154);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(65, 109, 154);
+}
+
+nav li {
+    float: left;
+}
+
+nav li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(51, 86, 122);
+}
+
+nav li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*----------------end dropdown  menu*/
+
+
+/*----------------start of page css*/
+html, body {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.container {
+  width: 100%;
+  background-color: rgb(65, 109, 154);
+}
+
+header {
+  padding-top: 60px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+  background-color: rgb(65, 109, 154);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+header h3 {
+  font-size: 15px;
+  color: rgb(142, 176, 210);
+}
+
+main {
+  margin-bottom: -50px;
+}
+
+article {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article img {
+  width: 100px;
+}
+
+article h2 {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+}
+
+article li {
+  list-style-type:disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+article p {
+  line-height: 25px;
+}
+
+.container_second {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #e6e6e6;
+}
+
+footer, .push {
+  height: 50px;
+  background-color: #e6e6e6;
+  text-align: center;
+}
+
+footer a:link, footer a:visited {
+  color: black;
+}

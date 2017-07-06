@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+Ki Jun Joseph Jung A00918606
+Assignment 1: Index Page
+-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" lang="en">
+  <link rel="stylesheet" href="css/assign05.css" type="text/css">
+  <title>COMP1950 Assignment 5</title>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script type="text/javascript">
+  $( document ).ready(function() {
+    $('#checkbox').change(function(){
+      setInterval(function () {
+          moveRight();
+      }, 3000);
+    });
+
+  	var slideCount = $('#slider ul li').length;
+  	var slideWidth = $('#slider ul li').width();
+  	var slideHeight = $('#slider ul li').height();
+  	var sliderUlWidth = slideCount * slideWidth;
+
+  	$('#slider').css({ width: slideWidth, height: slideHeight });
+
+  	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+      $('#slider ul li:last-child').prependTo('#slider ul');
+
+      function moveLeft() {
+          $('#slider ul').animate({
+              left: + slideWidth
+          }, 200, function () {
+              $('#slider ul li:last-child').prependTo('#slider ul');
+              $('#slider ul').css('left', '');
+          });
+      };
+
+      function moveRight() {
+          $('#slider ul').animate({
+              left: - slideWidth
+          }, 200, function () {
+              $('#slider ul li:first-child').appendTo('#slider ul');
+              $('#slider ul').css('left', '');
+          });
+      };
+
+      $('a.control_prev').click(function () {
+          moveLeft();
+      });
+
+      $('a.control_next').click(function () {
+          moveRight();
+      });
+  });
+
+  /*Funtion to open menu*/
+  function openNav() {
+    document.getElementById("sidenav").style.width = "250px";
+  }
+
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+      document.getElementById("sidenav").style.width = "0";
+  }
+  </script>
+</head>
+
+<body>
+    <!--Start of horizontal navigation menu-->
+    <nav id="sidenav">
+      <ul>
+        <li><a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a></li>
+        <li><a href="assign05.html">Main</a></li>
+        <li><a href="assign05_1.html">Page 1</a></li>
+        <li><a href="assign05_2.html">Page 2</a></li>
+        <li><a href="assign05_3.html">Page 3</a></li>
+        <li><a href="index.html">Back to Index</a></li>
+      </ul>
+    </nav>
+
+    <!--Start of container-->
+  <div class="container">
+    <!--Start of header section-->
+    <header>
+      <h1>COMP1950 Assignment 5</h1>
+    </header>
+    <div id="menubar">
+      <a id="menu" onclick="openNav()" href="#">Menu</a>
+      <div class="sprites">
+        <a id="img1" href="https://www.facebook.com" target="_blank"></a>
+        <a id="img2" href="https://www.gmail.com" target="_blank"></a>
+        <a id="img3" href="https://www.linkedin.com" target="_blank"></a>
+        <a id="img4" href="https://plus.google.com" target="_blank"></a>
+      </div>
+    </div>
+    <!--Start of content section-->
+    <main id="container">
+      <!--Start of container that contains pictures and paragraphs-->
+      <section>
+        <article>
+          <h2>COMP1950 Assignment 6</h2>
+          <h3>Very Simple Slider</h3>
+          <div id="slider">
+            <a href="#" class="control_next">>></a>
+            <a href="#" class="control_prev"><</a>
+            <ul>
+              <li><img src="images/seoul.jpg" alt="Seoul"/></li>
+              <li><img src="images/newyork.jpg" alt="New York"/></li>
+              <li><img src="images/toronto.jpg" alt="Toronto"/></li>
+            </ul>
+          </div>
+
+          <div class="slider_option">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Autoplay Slider</label>
+          </div>
+
+          <p>
+          This jQuery plugin provides users to slide through listed images dynamically instead of simply
+          align images. I customized the images to fit in the slider 100%, and changed CSS properties(adjusting image sizes,
+           responsive layout, and layout colors) to make it look nicer than vanilla style.
+           This plugin was downloaded from <a href="https://codepen.io/zuraizm/pen/vGDHl">here</a>. I used my own knowledge
+            to apply this plugin to this page.
+          </p>
+        </article>
+        <div class="push"></div>
+      </section>
+    </main>
+
+
+    <!--Start of footer section-->
+    <footer>
+      <a href="http://validator.w3.org/check?uri=referer">HTML Validation</a>
+    </footer>
+  </div>
+
+</body>
+</html>

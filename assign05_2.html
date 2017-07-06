@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+Ki Jun Joseph Jung A00918606
+Assignment 1: Index Page
+-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" lang="en">
+  <link rel="stylesheet" href="css/assign05.css" type="text/css">
+  <title>COMP1950 Assignment 5</title>
+
+  <script type="text/javascript" src="jquery-3.1.1.js"></script>
+  <script type="text/javascript">
+  onload=function(){
+
+  }
+
+  function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  }
+
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+      document.getElementById("sidenav").style.width = "0";
+  }
+  </script>
+</head>
+
+<body>
+    <!--Start of horizontal navigation menu-->
+    <nav id="sidenav">
+      <ul>
+        <li><a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+        </li>
+        <li><a href="assign05.html">Main</a></li>
+        <li><a href="assign05_1.html">Page 1</a></li>
+        <li><a href="assign05_2.html">Page 2</a></li>
+        <li><a href="assign05_3.html">Page 3</a></li>
+        <li><a href="index.html">Back to Index</a></li>
+      </ul>
+    </nav>
+
+    <!--Start of container-->
+  <div class="container">
+    <!--Start of header section-->
+    <header>
+      <h1>COMP1950 Assignment 5</h1>
+    </header>
+    <div id="menubar">
+      <a id="menu" onclick="openNav()" href="#">Menu</a>
+      <div class="sprites">
+        <a id="img1" href="https://www.facebook.com" target="_blank"></a>
+        <a id="img2" href="https://www.gmail.com" target="_blank"></a>
+        <a id="img3" href="https://www.linkedin.com" target="_blank"></a>
+        <a id="img4" href="https://plus.google.com" target="_blank"></a>
+      </div>
+    </div>
+    <!--Start of content section-->
+    <main id="container">
+      <!--Start of container that contains pictures and paragraphs-->
+      <section>
+        <article>
+            <h2>Beauty And The Beast</h2>
+            <img src="images/bb.jpg" alt=""/>
+            <ul>
+              <li class="cast">Cast</li>
+              <li><img src="images/emma_watson.jpg" alt=""/>Emma Watson: Belle</li>
+              <li><img src="images/dan_stevens.jpg" alt=""/>Dan Stevens: Beast</li>
+              <li><img src="images/ewan_mcgregor.jpg" alt=""/>Ewan Mcgregor: Lumiere</li>
+            </ul><br><br>
+            <p>One of the famous Disney animations produced alive with great casts.
+              Those of who have enjoyed Disney animation will love the movie; the Rotton score
+              of the movie is currently at 75%.
+               <br><br><a href="https://www.rottentomatoes.com/m/beauty_and_the_beast_2017" target="_blank">About this movie</a></p>
+        </article>
+
+        <article>
+            <h2>Guardians Of The Galaxy</h2>
+            <img src="images/gg.jpg" alt=""/>
+            <ul>
+              <li class="cast">Cast</li>
+              <li><img src="images/chris_pratt.jpg" alt=""/>Chris Pratt: Peter Quill</li>
+              <li><img src="images/zoe_saldana.jpg" alt=""/>Zoe Saldana: Gamora</li>
+              <li><img src="images/michael_rooker.jpg" alt=""/>Michael Rooker: Yondu</li>
+            </ul><br><br>
+            <p>The second series of Guardians Of The Galaxy have recently released.
+              This series has become the heart of Marble's hero movie production, and plays
+              important role in setting up the standard backgrounds for further story universe extension.
+              If you love superhero movies, this is a MUST watch.
+              <br><br><a href="https://www.rottentomatoes.com/m/guardians_of_the_galaxy_vol_2" target="_blank">About this movie</a></p>
+        </article>
+
+        <article>
+            <h2>The Lego Batman Movie</h2>
+            <img src="images/lb.jpg" alt=""/>
+            <ul>
+              <li class="cast">Cast</li>
+              <li><img src="images/will_arnette.jpg" alt=""/>Will Arnette: Bruce Wayne</li>
+              <li><img src="images/ralph_fiennes.jpg" alt=""/>Ralph Fiennes: Alfred Pennyworth</li>
+              <li><img src="images/rosario_dawson.jpg" alt=""/>Rosario Dawson: Barbara Gordon</li>
+            </ul><br><br>
+            <p>The Batman movies have been carrying too much weight on its shoulder being serious.
+              Full of parodies and humours expressed throughout this movie will present you
+              great time to spend with your family or friends.
+              <br><br><a href="https://www.rottentomatoes.com/m/the_lego_batman_movie" target="_blank">About this movie</a></p>
+        </article>
+
+        <div class="push"></div>
+      </section>
+    </main>
+
+
+    <!--Start of footer section-->
+    <footer>
+      <a href="http://validator.w3.org/check?uri=referer">HTML Validation</a>
+    </footer>
+  </div>
+
+</body>
+</html>

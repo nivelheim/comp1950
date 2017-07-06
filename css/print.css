@@ -1,0 +1,85 @@
+html, body {
+  font-family: "Nanum Gothic", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+header h1 {
+  padding-top: 15px;
+  height: 30px;
+  text-align: center;
+}
+
+footer a {
+  display: none;
+}
+
+.push {
+  display: none;
+}
+
+section {
+  min-height: 100%;
+  margin-bottom: -50px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+section p {
+  width: 100%;
+}
+
+article {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+article h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight:bold;
+}
+
+a[id^="img"]{
+  display: none;
+}
+
+#menubar {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+#menu:link {
+    text-decoration: none;
+    display: none;
+}
+
+article a:link, article a:visited {
+    color: black;
+}
+
+a:link:after, a:visited:after {
+	   content: " (URL: " attr(href) ") ";
+	   font-size: 90%;
+	}
+
+article.add1 h2 {
+  font-size: 40px;
+}
+
+article.add1 p {
+  font-size: 1.5em;
+}
+
+nav {
+  display: none;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+}
